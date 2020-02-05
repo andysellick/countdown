@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webfonts Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	    body, textarea { font-family:Arial, Sans-Serif; line-height:1.6em; font-size:13px; }
+	    h1 { font-size:3em; }
+	    h2, h3 { color:#999; }
+	    .content { width:780px; margin: 20px auto 40px; }
+	    .demo { font-weight:bold; font-style:normal; color: #999 }
+	    .fontdisplay {font-size:2em;line-height:150%;margin: 10px 40px 0px 0px;}
+	    .guidelines { color:#333; }
+	    pre { padding:0 0 0 20px; }
+	    hr { border:0; border-bottom:1px solid #537094; margin:20px 0; }
+	    .link { color: #537094;text-decoration:none; font-weight:bold;}
+	    .uc {text-transform:uppercase}
+	    
+    </style>
+    <style type="text/css">
+@font-face{
+font-family:"Brandon Text W01 Regular";
+src:url("Fonts/e416bea9-ae84-4323-b9f2-298c13bd7b0a.eot?#iefix");
+src:url("Fonts/e416bea9-ae84-4323-b9f2-298c13bd7b0a.eot?#iefix") format("eot"),url("Fonts/641c334a-4247-47ff-afdd-8a7dadb13595.woff2") format("woff2"),url("Fonts/98af37a8-b4d4-4d22-a013-32f3041ec1bb.woff") format("woff"),url("Fonts/679da323-4b66-47ac-9819-d48272e64833.ttf") format("truetype"),url("Fonts/760535fc-04e3-4e76-8e8e-064fa58cb3b8.svg#760535fc-04e3-4e76-8e8e-064fa58cb3b8") format("svg");
+}
+@font-face{
+font-family:"Brandon Text W01 Bold";
+src:url("Fonts/aad9c5a7-1530-43c7-8365-e733bb3a4c6b.eot?#iefix");
+src:url("Fonts/aad9c5a7-1530-43c7-8365-e733bb3a4c6b.eot?#iefix") format("eot"),url("Fonts/9e44481d-0ce3-4208-a376-bdc2ff9bc671.woff2") format("woff2"),url("Fonts/8685ba95-06b4-4353-aae3-c849f7671452.woff") format("woff"),url("Fonts/cd7a4c71-905d-4f4f-84c5-dfa517e30711.ttf") format("truetype"),url("Fonts/5fc00f46-e402-4d59-9c9d-6c21ee2b8167.svg#5fc00f46-e402-4d59-9c9d-6c21ee2b8167") format("svg");
+}
+</style>
+<script type="text/javascript">
+var MTIProjectId='f459cc0f-9c17-4bac-9c10-a583d8b69eaf';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+        mtiTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/t/trackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script>
+</head>
+<body>
+    <div class="content">
+        <h1 class="demo">Fonts.com Web fonts</h1>
+        <p style="margin-top: -10px; font-size: 1.5em; color: #666"><b>@font-face implementation instructions</b></p>
+        <p>The asynchronous script loads in the background allowing the other elements of your website to load first and undeterred.</p>
+        <hr />
+        <p class="uc">The fonts contained in this kit are:</p>
+        <div class="fontdisplay">
+            <div style="font-family:'Brandon Text W01 Bold';"> Brandon Text W01 Bold </div>
+<div style="font-family:'Brandon Text W01 Regular';"> Brandon Text W01 Regular </div>
+
+        </div>
+        <hr />
+        Click here for <a class="link uc" href="demo.htm">css only</a> web fonts implementation
+        <hr />
+        <div class="guidelines">
+            <h2>CSS Implementation Guidelines</h2>
+            <p>You and any third party web font hosting service are responsible for ensuring that the font software in the self-hosting kit, in its original format, can only be used on the Web Sites for which the self-hosting kit was downloaded and cannot be used or referenced by any other web site. This includes, but is not limited to installing adequate technical protection measures that restrict the use and/or access to the font software, for instance by utilizing JavaScript or access control mechanism for cross-origin resource sharing and protecting against use on web sites other than the Web Sites for which the self-hosting kit was downloaded by restricting domain access only to such Web Sites. You must also retain the pageview tracking code on any Web Site that you self-host. In the event this Agreement terminates for any reason, the font software included with the self-hosting kit must be deleted from the server and all copies must be destroyed or returned to Monotype Imaging.</p>
+            <p>View <a class="link" href="http://new.fonts.com/info/legal/eula/web-fonts" target="_blank">"WEB FONT SOFTWARE" LICENSE AGREEMENT</a></p>
+            <h2>Asynchronous Implementation (Requires JavaScript)</h2>
+            <p>Font file names have been obfuscated to protect the font software. You can identify font format based on file ending:</p>
+            <ul>
+                <li>1 - TrueType (ttf)</li>
+                <li>2 - Embedded OpenType (eot)</li>
+                <li>3 - Web Open Font Format (woff)</li>
+                <li>4 - Web Open Font Format version 2 (woff2)</li>
+                <li>5 - Scalable Vector Graphics (svg)</li>
+                
+            </ul>
+            <p class="uc" style="margin: 20px 0px -20px;"><b>Copy and paste following code in head section of the page</b></p>
+            <hr />
+            <textarea style="width: 830px; height: 350px; border: 1 #fff solid; background-color: #fcfcfc;"><style type="text/css">
+@font-face{
+font-family:"Brandon Text W01 Regular";
+src:url("Fonts/e416bea9-ae84-4323-b9f2-298c13bd7b0a.eot?#iefix");
+src:url("Fonts/e416bea9-ae84-4323-b9f2-298c13bd7b0a.eot?#iefix") format("eot"),url("Fonts/641c334a-4247-47ff-afdd-8a7dadb13595.woff2") format("woff2"),url("Fonts/98af37a8-b4d4-4d22-a013-32f3041ec1bb.woff") format("woff"),url("Fonts/679da323-4b66-47ac-9819-d48272e64833.ttf") format("truetype"),url("Fonts/760535fc-04e3-4e76-8e8e-064fa58cb3b8.svg#760535fc-04e3-4e76-8e8e-064fa58cb3b8") format("svg");
+}
+@font-face{
+font-family:"Brandon Text W01 Bold";
+src:url("Fonts/aad9c5a7-1530-43c7-8365-e733bb3a4c6b.eot?#iefix");
+src:url("Fonts/aad9c5a7-1530-43c7-8365-e733bb3a4c6b.eot?#iefix") format("eot"),url("Fonts/9e44481d-0ce3-4208-a376-bdc2ff9bc671.woff2") format("woff2"),url("Fonts/8685ba95-06b4-4353-aae3-c849f7671452.woff") format("woff"),url("Fonts/cd7a4c71-905d-4f4f-84c5-dfa517e30711.ttf") format("truetype"),url("Fonts/5fc00f46-e402-4d59-9c9d-6c21ee2b8167.svg#5fc00f46-e402-4d59-9c9d-6c21ee2b8167") format("svg");
+}
+</style>
+<script type="text/javascript">
+var MTIProjectId='f459cc0f-9c17-4bac-9c10-a583d8b69eaf';
+ (function() {
+        var mtiTracking = document.createElement('script');
+        mtiTracking.type='text/javascript';
+        mtiTracking.async='true';
+        mtiTracking.src=('https:'==document.location.protocol?'https:':'http:')+'//fast.fonts.net/t/trackingCode.js';
+        (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+   })();
+</script></textarea>
+            <h3>Licensing information should be included within the CSS</h3>
+<pre>/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/</pre>
+        </div>
+    </div>
+</body>
+</html>
