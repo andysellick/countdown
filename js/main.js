@@ -58,7 +58,6 @@ $(function() {
       var degrees = get_current_degrees(now, go_to);
 
       if (degrees >= 180 && !switched) {
-        console.log('switch')
         rotateElement(currentside, 180);
         currentside = leftside;
         switched = 1;

@@ -8,11 +8,13 @@ body {
 @transspeed: 1s;
 
 .cdwrap {
-    position:relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    .transform(translateX(-50%) translateY(-50%));
     width:400px;
     height:400px;
     padding:20px;
-    margin:20px auto;
     overflow:hidden;
     .border-radius( 1000px );
     .border-box();
@@ -110,7 +112,7 @@ body {
 
             .content {
                 .vertical-center();
-                font-size: 20vw;
+                font-size: 40vmin;
             }
         }
     }
